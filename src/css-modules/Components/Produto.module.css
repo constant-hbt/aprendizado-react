@@ -1,0 +1,28 @@
+.titulo,
+.preco,
+.precito {
+  color: #43c;
+  --cor: red;
+  --altura: 200px;
+}
+
+@value peso: bold;
+@value cor: red;
+
+.preco-total {
+  font-weight: peso;
+  color: cor;
+}
+
+.precito {
+  height: var(--altura);
+}
+
+.comprar {
+  transform: rotate(90deg) translateY(-120px);
+}
+
+/* Adicionado propriedade global, de forma geral */
+:global .container {
+  max-width: 900px;
+}
